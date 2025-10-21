@@ -48,7 +48,14 @@ summary.lm(simp2)
 
 The predicted overall weight of the bear compared to the adjusted R-squared value 0.7423 and the Residual standard error 61.83.
 
+```{r}
+simp3 <- lm(WEIGHT~HEADWTH,data=bears)
+plot(WEIGHT~HEADWTH,data=bears)
+abline(simp3)
+summary.lm(simp3)
+```
 
+The predicted overall weight of the bear compared to Adjusted R-squared value 0.6064 and the Residual standard error 76.41.
 
 
 
